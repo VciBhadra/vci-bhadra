@@ -283,12 +283,13 @@
   .notes-title { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.2rem; color: var(--primary); display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
   .notes-title i { color: var(--accent); font-size: 1.4rem; flex-shrink: 0; }
   .notes-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
-  .notes-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.93rem; color: var(--text-mid); line-height: 1.65; }
-  .notes-list li i { color: var(--primary); margin-top: 3px; flex-shrink: 0; width: 16px; }
+  .notes-list li { display: flex; align-items: flex-start; gap: 12px; }
+  .notes-list li i { color: var(--primary); margin-top: 3px; flex-shrink: 0; width: 16px; text-align: center; }
+  .notes-list li span { font-size: 0.93rem; color: var(--text-mid); line-height: 1.65; display: block; }
   @media (max-width: 600px) {
     .notes-box { padding: 22px 18px; border-radius: var(--radius); }
     .notes-title { font-size: 1.05rem; }
-    .notes-list li { font-size: 0.88rem; gap: 10px; }
+    .notes-list li span { font-size: 0.88rem; }
   }
 
   /* ===================== NEWSLETTER ===================== */
@@ -736,11 +737,26 @@
     <div class="notes-box">
       <div class="notes-title"><i class="fas fa-exclamation-circle"></i> Important Notice</div>
       <ul class="notes-list">
-        <li><i class="fas fa-info-circle"></i> This website is <strong>only for admission information and digital marketing purposes.</strong></li>
-        <li><i class="fas fa-ban"></i> <strong>No payment or online transaction</strong> is taken through this website. All fee payments happen in-person at the institute.</li>
-        <li><i class="fas fa-phone-alt"></i> Students or users can contact the institute <strong>only through email or phone call.</strong></li>
-        <li><i class="fas fa-paper-plane"></i> Submitting the enquiry form <strong>only sends an admission enquiry.</strong> It does not confirm admission. Admission is subject to eligibility and seat availability.</li>
-        <li><i class="fas fa-map-marker-alt"></i> Visit us at: <strong>Anaj Mandi, Near Police Station, Bhadra (335501), Rajasthan</strong></li>
+        <li>
+          <i class="fas fa-info-circle"></i>
+          <span>This website is <strong>only for admission information and digital marketing purposes.</strong></span>
+        </li>
+        <li>
+          <i class="fas fa-ban"></i>
+          <span><strong>No payment or online transaction</strong> is taken through this website. All fee payments happen in-person at the institute.</span>
+        </li>
+        <li>
+          <i class="fas fa-phone-alt"></i>
+          <span>Students or users can contact the institute <strong>only through email or phone call.</strong></span>
+        </li>
+        <li>
+          <i class="fas fa-paper-plane"></i>
+          <span>Submitting the enquiry form <strong>only sends an admission enquiry.</strong> It does not confirm admission. Admission is subject to eligibility and seat availability.</span>
+        </li>
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Visit us at: <strong>Anaj Mandi, Near Police Station, Bhadra (335501), Rajasthan</strong></span>
+        </li>
       </ul>
     </div>
   </div>
